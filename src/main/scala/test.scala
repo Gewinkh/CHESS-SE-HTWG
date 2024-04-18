@@ -17,7 +17,6 @@ import scala.language.postfixOps
   val knight = "N"
   val rook = "R"
   val empty = " "
-  // a
 
 
   val edge = plus + minus * 3
