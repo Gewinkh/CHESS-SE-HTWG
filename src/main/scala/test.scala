@@ -19,19 +19,19 @@ import scala.language.postfixOps
   val empty = " "
 
 
-  val edge = plus + minus * 3
+  val edge = plus + minus * 4
 
 
   def createfield(ssize: Int): Unit = {
     val edgefield = edge * ssize + nextLPlus
-    val unit = vLine + space * 3
+    val unit = vLine + space * 4
     val unitline = unit * ssize + nextLVLine
     print("\n" + (edgefield + unitline) * ssize + edgefield)
   }
 
   def field(player:String): Unit = {
     val edgefield = edge + nextLPlus
-    val unit = vLine + space + player + space + nextLVLine
+    val unit = vLine + space + player + space * 2 + nextLVLine
     print("\n" + edgefield + unit + edgefield)
   }
 
