@@ -10,7 +10,7 @@ This project was developed by Gewin and Arian as part of their computer science 
 
 The objective of the chess game is to checkmate the opponent's king, which means the king is in a position to be captured and cannot escape capture.
 
-### Game Board
+### ChessBoard
 
 The chessboard consists of 64 squares arranged in an 8x8 grid. The squares are alternately colored dark and light. The ranks are numbered from 1 to 8, and the files are lettered from a to h.
 
