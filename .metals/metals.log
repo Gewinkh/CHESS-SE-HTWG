@@ -12740,3 +12740,17 @@ INFORMATION: Unsupported notification method: $/setTrace
 2024.04.26 03:57:26 INFO  time: compiled root in 6.3s
 2024.04.26 03:57:26 INFO  compiling root (5 scala sources)
 2024.04.26 03:57:26 INFO  time: compiled root in 0.28s
+2024.04.26 04:01:20 INFO  compiling root (5 scala sources)
+2024.04.26 04:01:20 INFO  time: compiled root in 0.25s
+Apr. 26, 2024 4:01:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 60
+Apr. 26, 2024 4:01:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 76
+Apr. 26, 2024 4:02:41 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMATION: Unsupported notification method: $/setTrace
+2024.04.26 04:06:02 INFO  Shutting down server
+2024.04.26 04:06:02 INFO  shutting down Metals
+2024.04.26 04:06:02 INFO  Shut down connection with build server.
+2024.04.26 04:06:02 INFO  Shut down connection with build server.
+2024.04.26 04:06:02 INFO  Shut down connection with build server.
+2024.04.26 04:06:02 INFO  Exiting server
