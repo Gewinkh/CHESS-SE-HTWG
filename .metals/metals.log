@@ -12714,3 +12714,29 @@ Caused by: java.net.URISyntaxException: Illegal character in opaque part at inde
 2024.04.26 03:56:25 INFO  Shut down connection with build server.
 2024.04.26 03:56:25 INFO  Shut down connection with build server.
 2024.04.26 03:56:25 INFO  Exiting server
+2024.04.26 03:56:35 INFO  Started: Metals version 1.3.0 in folders 'C:\Users\Gewin Singh\Desktop\S\AIN3\SE\CHESS-SE-HTWG' for client Visual Studio Code 1.88.1.
+SLF4J: Class path contains multiple SLF4J providers.
+SLF4J: Found provider [scribe.slf4j.ScribeServiceProvider@23578df2]
+SLF4J: Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@1fbe1e0a]
+SLF4J: See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual provider is of type [scribe.slf4j.ScribeServiceProvider@23578df2]
+2024.04.26 03:56:36 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.04.26 03:56:36 INFO  Attempting to connect to the build server...
+2024.04.26 03:56:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Gewin Singh\Desktop\S\AIN3\SE\CHESS-SE-HTWG\.metals\bsp.trace.json or C:\Users\Gewin Singh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.04.26 03:56:37 INFO  Attempting to connect to the build server...
+2024.04.26 03:56:37 INFO  Attempting to connect to the build server...
+2024.04.26 03:56:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Gewin Singh\Desktop\S\AIN3\SE\CHESS-SE-HTWG\project\project\.metals\bsp.trace.json or C:\Users\Gewin Singh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+Apr. 26, 2024 3:56:37 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 1
+2024.04.26 03:56:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Gewin Singh\Desktop\S\AIN3\SE\CHESS-SE-HTWG\project\.metals\bsp.trace.json or C:\Users\Gewin Singh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.04.26 03:56:38 INFO  time: Connected to build server in 0.87s
+2024.04.26 03:56:38 INFO  Connected to Build server: Bloop v1.5.17
+2024.04.26 03:56:38 INFO  time: Imported build in 0.38s
+Apr. 26, 2024 3:56:39 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMATION: Unsupported notification method: $/setTrace
+2024.04.26 03:56:49 INFO  no build target found for C:\Users\Gewin Singh\Desktop\S\AIN3\SE\CHESS-SE-HTWG\src\main\scala\Chess\coordinates.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.04.26 03:57:17 INFO  time: indexed workspace in 28s
+2024.04.26 03:57:20 INFO  compiling root (5 scala sources)
+2024.04.26 03:57:26 INFO  time: compiled root in 6.3s
+2024.04.26 03:57:26 INFO  compiling root (5 scala sources)
+2024.04.26 03:57:26 INFO  time: compiled root in 0.28s
