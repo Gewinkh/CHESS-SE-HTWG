@@ -15,39 +15,51 @@ object Board {
   val edge = plus + minus * 4
   
 class Board(size: Int) {
+  def movePieces(x1: Int, y1: Int, x2: Int, y2: Int, list: List[Chess.Pieces]): List[Chess.Pieces] = {
+    list.find(piece => piece.getCords() == (x1, y1)) match {
+      case Some(foundPiece) =>
+        val movedPiece = Pieces(foundPiece.getPiece(), (x2,y2), foundPiece.getColor())
+        val updatedBoard = list.filter(piece => piece != foundPiece) :+ movedPiece
+        updatedBoard
+      case None =>
+        println("Piece not found at the specified coordinates.")
+        return null
+    }
+  }
+
   val edgefield = edge * size + nextLPlus
-  def checkFieldR(x: Int, y: Int): String = {
+  def checkFieldR(x: Int, y: Int, list: List[Chess.Pieces]): String = {
     val sr = new StringBuilder
     sr.append(vLine + space)
-    setupBoard.find(piece => piece.getCords() == (x, y)) match {
-      case Some(foundPiece) => sr.append(foundPiece.getText() + space)
+    list.find(piece => piece.getCords() == (x, y)) match {
+      case Some(foundPiece) => sr.append(foundPiece.getText() + space*2)
       case None => sr.append(space * 3)
     }
     if(x < size - 1){
-      sr.append(checkFieldR(x+1,y))
+      sr.append(checkFieldR(x+1,y, list))
     } else if(y < size - 1) {
-      sr.append(nextLVLine + edgefield)
-      sr.append(checkFieldR(0,y+1))
+      sr.append(vLine + space * 2 + (y+1) + "\n" + edgefield)
+      sr.append(checkFieldR(0,y+1, list))
     }
     sr.toString()
   }
-  def updateField(): String = {
+  def updateField(list: List[Chess.Pieces]): String = {
     val sr = new StringBuilder
-    /*sr.append(space*2 + "A" + space * 2 +
-              space*2 + "B" + space * 2 +
-              space*2 + "C" + space * 2 +
-              space*2 + "D" + space * 2 +
-              space*2 + "E" + space * 2 +
-              space*2 + "F" + space * 2 +)
-    */
+    sr.append(space * 2 + "a" + space * 2)
+    sr.append(space * 2 + "b" + space * 2)
+    sr.append(space * 2 + "c" + space * 2)
+    sr.append(space * 2 + "d" + space * 2)
+    sr.append(space * 2 + "e" + space * 2)
+    sr.append(space * 2 + "f" + space * 2)
+    sr.append(space * 2 + "g" + space * 2)
+    sr.append(space * 2 + "h" + space * 2)
+    sr.append("\n")
     sr.append(edgefield)
-    sr.append(checkFieldR(0,0))
+    sr.append(checkFieldR(0,0, list))
+    sr.append(vLine + space * 2 + (size) + "\n" + edgefield)
     sr.toString()
   }
-}
-
-
-val setupBoard: List[Chess.Pieces] = {
+  val setupBoard: List[Chess.Pieces] = {
   val startingPositions = List(
     Pieces(Chesspiece.ROOK, (0,0), Colors.WHITE),
     Pieces(Chesspiece.KNIGHT, (0, 1), Colors.WHITE),
@@ -84,13 +96,4 @@ val setupBoard: List[Chess.Pieces] = {
   )
   startingPositions
 }
-
-
-
-def printPieces(): Unit = {
-  setupBoard.foreach { piece =>
-    val colorText = if (piece.getColor() == Colors.WHITE) "Weiß" else "Schwarz"
-    val pieceTypeText = piece.getText()
-    println(s"$colorText $pieceTypeText auf Position (${piece.getCords()}")
-  }
 }
