@@ -9,27 +9,14 @@ class Pieces(val chesspiece: Chesspiece, val cords: (Int, Int), color: Colors) {
   def getPiece(): Chesspiece = chesspiece
   def getCords(): (Int, Int) = cords
   def getText(): String ={
-    if(color == Colors.BLACK){
-      chesspiece match {
+    chesspiece match {
       case Chesspiece.ROOK   => "♖"
       case Chesspiece.KNIGHT => "♘"
       case Chesspiece.BISHOP => "♗"
       case Chesspiece.QUEEN  => "♕"
       case Chesspiece.KING   => "♔"
       case Chesspiece.PAWN   => "♙"
-      }
-    } else {
-      chesspiece match {
-      case Chesspiece.ROOK   => "♜"
-      case Chesspiece.KNIGHT => "♞"
-      case Chesspiece.BISHOP => "♝"
-      case Chesspiece.QUEEN  => "♛"
-      case Chesspiece.KING   => "♚"
-      case Chesspiece.PAWN   => "♟"
-      }
-    }
-  }
-
+    }}
 }
 
 enum Colors:
