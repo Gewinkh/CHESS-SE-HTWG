@@ -1,5 +1,5 @@
 [![Scala CI](https://github.com/Gewinkh/CHESS-SE-HTWG/actions/workflows/scala.yml/badge.svg)](https://github.com/Gewinkh/CHESS-SE-HTWG/actions/workflows/scala.yml)
-[![Coverage Status](https://coveralls.io/repos/github/Gewinkh/CHESS-SE-HTWG/badge.svg?branch=master)](https://coveralls.io/github/Gewinkh/CHESS-SE-HTWG?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/Gewinkh/CHESS-SE-HTWG/badge.svg?branch=A6)](https://coveralls.io/github/Gewinkh/CHESS-SE-HTWG?branch=A6)
 # Chess Game Project at HTWG Konstanz
 
 ## Overview
